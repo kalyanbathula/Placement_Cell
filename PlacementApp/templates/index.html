@@ -1,0 +1,181 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    {% load static %}
+
+<!-- Rest of your HTML code -->
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/index.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>
+      CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY STUDENT PLACEMENT POTRAL
+    </title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar">
+      <h2 class="navbar-logo"><a href="#">PLACEMENT CELL</a></h2>
+      <div class="navbar-menu">
+        <a href="#companies">Companies</a>
+        <a href="{% url 'aboutus' %}">About Us</a>
+        <a href="{% url 'contactus' %}">Contact Us</a>
+        <a href="{% url 'login' %}">Login</a>
+      </div>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <!---header-->
+    {% load static %}
+    <header style="background-image: url('{% static "photos/bg5.jpg" %}')">
+      <h1 class="header-title">
+        YOUR<br />
+        <span> FUTURE BEGINS</span> <br />HERE
+      </h1>
+    </header>
+    <section class="featured" id="companies">
+      <h1 class="section-title">Featured Companies</h1>
+      <p>
+      Explore your desired companies 
+
+      </p>
+      <h1>Welcome to the Job Portal</h1>
+      <button type="button" onclick="redirectToJobListings()" class="btn btn-primary">View Job Listings</button>
+
+    <script>
+        function redirectToJobListings() {
+            window.location.href = "/job_listings/";
+        }
+    </script>
+      <div class="featured-wrapper">
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/apple-.svg' %}">
+        
+          <p><a class="tes" href="https://www.apple.com/careers/in/">Apple</a></p>
+          <button class="featured -button">View 2 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/qualcomm.svg' %}">
+          <p><a class="tes" href="https://www.qualcomm.com/company/careers">Qualcomm</a></p>
+          <button class="featured -button">View 5 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/Dell.svg' %}">
+          <p><a class="tes" href="https://jobs.dell.com/india-diversity">Dell</a></p>
+          <button class="featured -button">View 3 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/google.svg' %}">
+          <p><a class="tes" href="https://careers.google.com/">Google</a></p>
+          <button class="featured -button">View 2 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/reliance.svg' %}">
+          <p><a class="tes" href="https://careers.ril.com/rilcareers/">Reliance</a></p>
+          <button class="featured -button">View 4 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/bank-of-america.svg' %}">
+          <p><a class="tes" href="https://careers.bankofamerica.com/en-us/job-search">bank-of-america</a></p>
+          <button class="featured -button">View 3 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/Amazon.svg' %}">
+          <p><a class="tes" href="https://www.amazon.jobs/en/search-jobcategory">Amazon</a></p>
+          <button class="featured -button">View 1 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/tesla.svg' %}">
+          <p><a class="tes" href="https://www.tesla.com/careers">Tesla</a></p>
+          <button class="featured -button">View 1 jobs</button>
+      </div>
+      <div class="featured-card">
+        <img class="featured-image" src="{% static 'photos/sony.svg' %}">
+          <p><a class="tes" href="https://www.sonyjobs.com/">SONY</a></p>
+          <button class="featured -button">View 6 jobs</button>
+      </div>
+      </div>
+  </section>
+  <script src="placement.js"></script>
+    <!--table for placement statistics-->
+    <table>
+      <p class="placement"><b> Placement Statistics</b></p>
+      <p class="placement-a"><b>(previous year statistics)</b></p>
+      <tr>
+        <th>Department</th>
+        <th>Number of Placements</th>
+        <th>Percentage of Total</th>
+      </tr>
+      <tr>
+        <td>Engineering</td>
+        <td>250</td>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <td>Marketing</td>
+        <td>125</td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>Sales</td>
+        <td>75</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td>50</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>500</td>
+        <td>100%</td>
+      </tr>
+    </table>
+  
+      </body>
+</html>
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>About Us</h3>
+        <p>To be center of excellence in it and core jobs.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: info@placementcell.com</li>
+          <li>Phone: 91+9898986565</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Follow Us</h3>
+       <a class="icon-a"><i class="fa fa-instagram icons"></i>&nbsp;&nbsp;instagram : placement_celled</a>
+      <p> <a class="icon-a"><i class="fa fa-facebook icons"></i>&nbsp;&nbsp;facebook : placement@ed</a> </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="copyright">Copyright &copy;2023 Your Website</p>
+      </div>
+    </div>
+  </div>
+</footer>

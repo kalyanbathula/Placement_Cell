@@ -1,0 +1,122 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title></title>
+        {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/dashboard2.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div id="mysidenav" class="sidenav">
+            <p class="logo"><span> <span>PLACEMENT CELL</span></p>
+             <a href="{% url 'Companies' %}" class="icon-a"><i class="fa fa-building icons"></i>&nbsp;&nbsp;Companies</a>
+             <a href="{% url 'notifs' %}" class="icon-a"><i class="fa fa-handshake-o icons"></i>&nbsp;&nbsp;Job Skills</a>
+             <a href="{% url 'stats' %}" class="icon-a"><i class="fa fa-link icons"></i>&nbsp;&nbsp;Statistics</a> 
+             <a href="{% url 'contactus' %}" class="icon-a" id="b"><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;&nbsp;Support</a>
+             <a href="{% url 'logout' %}" class="icon-a" ><i class="fa fa-sign-out icons"></i>&nbsp;&nbsp;Logout</a>
+             
+        </div>
+        <div id="main">
+            <div class="head">
+                <div class="col-div-5">
+                    <span style="font-size: 30px" cursor: pointer;colour; white; class="nav">
+                        &#9776;Dashboard</span>
+                    <span style="font-size: 30px" cursor: pointer;colour; white; class="nav2">
+                        &#9776;Dashboard</span>
+                </div>
+                <div class="col-div-5">
+                    
+                    <div class="profile">
+                        <img src="{% static 'photos/akash.png' %}" class="pro-img">
+                    <p>Akash Pingali
+                        <span></span></p>
+                </div>
+                <div class="clearfix"></div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>15<br/><span>Placements Applications</span></p>
+                <i class="fa fa-building-o box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>09<br/><span>Got Selected</span></p>
+                <i class="fa fa-handshake-o box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>03<br/><span>Upcoming Interviews</span></p>
+                <i class="fa fa-users box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>01<br/><span>Not selected</span></p>
+                <i class="fa fa-crosshairs box-icon"></i>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br/><br/>
+        <div class="col-div-8">
+            <div class="box-8">
+                <div class="content-box">
+                    <p>UPCOMING INTERVIEWS<span></span></p>
+                    <br/>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Required Eligible Skills</th>
+                            <th>No of Days For Interview</th>
+                        </tr>
+                        <tr>
+                            <td>Adani</td>
+                            <td>Data Scientist</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                        <td>Wipro</td>
+                        <td>Software Engineer</td>
+                        <td>08</td>
+                        </tr>
+                        
+                        </tr>
+                            <td>Microsoft</td>
+                            <td>OS Development</td>
+                            <td>14</td>
+                        </tr>
+                        </tr>
+                            <td>TCS</td>
+                            <td>Product Manager</td>
+                            <td>05</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-div-4">
+            <div class="box-4">
+                <div class="content-box">
+                    <p>Previous Years Placement Percentage</p>
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <div class="mask full">
+                                <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                <div class="fill"></div>
+                                </div>
+                            <div class="inside-circle">82%</div>
+                    </div>
+                </div>   
+                </div>
+                </div>
+        </div>
+         <div class="clearfix"></div>
+            </div>
+        
+    </body>
+</html>

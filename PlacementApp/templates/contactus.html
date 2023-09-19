@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'CSS/contact us.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <style>
+    body, html {
+  height: 100%;
+}
+h1{
+  color: azure;
+}
+* {
+  box-sizing: border-box;
+}
+
+.label-text {
+  color: black;
+}
+.form-control{
+  width: 100%;
+}
+
+.body {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  border: 3px solid #f8f3f3;
+  color: #141414;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-image {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQiEWqvPiMuXXplJ93zmi4i4vwtwYtpHaMzQGCHgc4A&usqp=CAU&ec=48665701");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  height: 100%;
+  background-position: center;
+}
+
+
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.textarea-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#submit {
+  margin-top: 20px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  font-style: bold;
+  border-radius: 5px;
+}
+
+#reset {
+  margin-top: 20px;
+  height: 40px;
+  background-color: rgb(15, 15, 75);
+  color: white;
+  font-style: bold;
+  border-radius: 5px;
+}
+
+#reset-link {
+  margin-top: 20px;
+  font-size: 16px;
+}
+   </style>
+</head>
+<body> 
+  <div class="bg-image"> </div>
+  <div class="body"> 
+    <h1>Contact Us</h1>
+    <form class="form-floating">
+      {% csrf_token %}
+      <input type="text" class="form-control" id="name" style="width: 100%;">
+      <label for="floatingInputValue">Name</label>
+      <div id="name-error" class="error-message"></div>
+    </form>
+    <br>
+    <form class="form-floating">
+      <input type="email" class="form-control" id="email" style="width: 100%;">
+      <label for="floatingInputValue">E-mail</label>
+      <div id="email-error" class="error-message"></div>
+    </form>
+    <br>
+    <form class="form-floating">
+      <input type="text" class="form-control" id="phone" style="width: 100%;">
+      <label for="floatingInputValue">Number</label>
+      <div id="phone-error" class="error-message"></div>
+    </form>
+    <br>
+    
+    <div class="form-floating">
+      <textarea class="form-control" id="comments" style="height: 100px"></textarea>
+      <label for="floatingTextarea2">Comments</label>
+      <div id="comments-error" class="error-message"></div>
+    </div>
+    <input type="button" value="Submit" id="submit" onclick="validate()">
+    <input type="button" value="Reset" id="reset" onclick="reset()">
+    
+    <div id="success-message" class="success-message"></div>
+    <a id="reset-link" href="{% url 'contactus' %}" style="display: none;">Fill Form Again</a>
+    <br/><br/><br/>
+    <div class="icon">
+      <a href="https://www.facebook.com/" class="icon-a"><i class="fa fa-facebook-square fa-4x"></i></a>
+      <a href="https://www.instagram.com/" class="icon-a"><i class="fa fa-instagram fa-4x"></i></a>
+      <a href="https://twitter.com/" class="icon-a"><i class="fa fa-twitter fa-4x"></i></a>
+    </div>
+  </div>        
+ 
+  <script src="{% static 'js/contactus.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+h1{
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 50px;
+    width: 100%;
+    padding-top: 13px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-size-adjust: 50px;
+    font-style: italic;
+    background-color: rgb(62, 141, 184);
+}
+body{
+    background-color:whitesmoke;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.totalcard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .totalcard .card {
+    margin: 50px;
+    width: 300px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .totalcard .card{
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.4),0 0 10px rgba(0,0,0,0.3);
+  }
+  .card:nth-child(1){
+    border-top: 5px solid green;
+  }
+  .card:nth-child(2){
+    border-top: 5px solid blue;
+  }
+  .card:nth-child(3){
+    border-top: 5px solid rgb(225, 142, 16);
+  }
+  .card:nth-child(1):hover {
+    box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
+          1px 1px 30px rgba(0,255,0,0.5);
+  }
+  .card:nth-child(2):hover {
+    box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
+          1px 1px 30px rgba(0,0,255,0.5);
+  }
+  .card:nth-child(3):hover {
+    box-shadow: inset 0px 0px 10px rgba(245, 160, 24, 0.5),
+          1px 1px 30px rgba(248, 142, 3, 0.5);
+  }
+  .totalcard .card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: .8s;
+  }
+  .totalcard .card img:hover {
+    transform: scale(3.5);
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  #detail p{
+    font-size: 15px;
+    line-height: 25px;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #detail button {
+    outline: none;
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid black;
+    padding: 9px 25px;
+    cursor: pointer;
+    transition-duration: .4s;
+  }
+  #detail a {
+    bottom: 80px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  
+    align-self: center;
+  }
+  .btn-akash:hover {
+    background: rgba(0,255,0,0.7);
+    color: #fff;
+  }
+  .btn-kalyan:hover {
+    background: rgba(0,0,255,0.5);
+    color: #fff;
+  }
+  .btn-srihan:hover {
+    background: rgba(250, 113, 7, 0.5);
+    color: #fff;
+  
+  }
+  .card-title {
+    font-size: 17px;
+    color: #343A40;
+    padding: 20px;
+    font-weight: 700;
+  }
+  #team_section{
+    font-family: 'Open Sans', sans-serif;
+    color: #2E3D49;
+    position: relative;
+  }
+  .diffSection {
+    width: 100%;
+    /*position: relative;*/
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    margin-bottom: 15px;
+  }

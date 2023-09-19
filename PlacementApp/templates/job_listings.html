@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Listings</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .job-listing {
+                margin-bottom: 20px;
+            }
+            .job-title {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .company-name {
+                font-size: 18px;
+                color: #888;
+                margin-bottom: 10px;
+            }
+            .job-description {
+                margin-bottom: 10px;
+            }
+            .job-details {
+                color: #666;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Job Listings</h1>
+            <div id="jobListings">
+                <ul>
+                    {% for job in job_listings %}
+                        <li>{{ job.title }} - {{ job.company }}</li>
+                        <p>{{ job.description }}</p>
+                        <p>Location: {{ job.location }}</p>
+                        <p>Requirements: {{ job.requirements }}</p>
+                        <p>Salary: {{ job.salary }}</p>
+                        <hr>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+</body>
+</html>

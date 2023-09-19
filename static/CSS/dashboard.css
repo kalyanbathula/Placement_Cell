@@ -1,0 +1,238 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    overflow: hidden;
+    font-family: system-ui;
+    background-image: url("https://media.istockphoto.com/id/1212342896/vector/abstract-hexagon-wallpaper-white-background-3d-vector-illustration.jpg?s=612x612&w=0&k=20&c=ynRzXUZ4_Ga3Y7joKBABdXUQI4xBvrdHJnYueJWEiw8=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clearfix{
+    clear:both;
+
+}
+.logo{
+    margin: 0px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 31px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+.logo span{
+    color:#040000;
+
+}
+.sidenav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(37, 187, 187);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+.sidenav a{
+    padding: 15px 8px 15px 32px;
+    text-decoration: dotted;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    background-color: rgb(37, 187, 187);
+
+}
+#main{
+    transition: margin-left 0.5s;
+    padding: 16px;
+    margin-left: 300px;
+}
+.head{
+    padding: 20px;
+}
+.col-div-5{
+    width: 50%;
+    float: left;
+   
+}
+.profile{
+    display: inline-flex;
+    float: right;
+    width: 160px;
+}
+.pro-img{
+    float: left;
+    width: 60px;
+    height: 65px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+}
+.pro-img:hover{
+    transform: scale(2);
+    transition: 2s;
+}
+.profile p{
+    color:black;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top :10px;
+    font-size: 20px;
+}
+.profile pspan{
+    font-weight: 500;
+    font-size: 11px;
+    display: block;
+    color: rgba(184, 14, 14, 0.911);
+}
+.nav{
+    display: none;
+}
+.col-div-3{
+    width: 25%;
+    float: left;
+}
+.box{
+    width: 85%;
+    height: 100px;
+    background-color: rgb(37, 187, 187);
+    margin-left: 10px;
+    padding: 10px;
+    
+
+}
+.box:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}
+.box-8:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.box p{
+    font-size: 34px;
+    color: black;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.box p span{
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+
+}
+.box-icon{
+    font-size: 40px;
+    float: right;
+    margin-top: 35px;
+    color: black;
+    padding-right: 10px;
+    
+}
+.col-div-8{
+    width: 70%;
+    float: left;
+}
+.col-div-4{
+    width: 30%;
+    float: left;
+}
+.content-box{
+    padding: 20px;
+}
+.content-box p{
+    margin: 0px;
+    font-size: 20px;
+    color: black;
+
+}
+.content-box p span{
+    float: right;
+    background-color: rgb(37, 187, 187);
+    padding: 3px 10px;
+    font-style: 15px;
+}
+.box-8,.box-4{
+    width: 96.5%;
+    background-color: rgb(37, 187, 187);
+    height: 330px;
+
+}
+.box-8{
+    margin-left: 10px;
+    width: 95%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+    text-align: left;
+    padding: 15px;
+    color: black;
+    border-bottom: 1px solid #8e898949;
+}
+.circle-wrap{
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #ce640e;
+    border-radius:50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle .mask{
+    clip: rect(0px,150px,150px,75px);
+}
+.circle-wrap .circle .mask .fill{
+    clip: rect(0px,75px,150px,0px);
+    background-color: #e8e7e7;
+}
+.circle-wrap .circle.mask.full,
+.circle-wrap .circle .fill{
+    animation: fill ease-in-out 3s;
+    transform: rotate(64.8eg);
+}
+@keyframes fil{
+    0%{
+        text-replace: rotate(0deg);
+    }
+    100%{
+        transform: rotate(64.8deg);
+    }
+}
+.circle-wrap .inside-circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(22, 161, 7);
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight:700;
+    font-size: 2em;
+}
+#b{
+    margin-top: 300px;
+}

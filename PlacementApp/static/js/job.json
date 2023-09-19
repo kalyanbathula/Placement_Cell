@@ -1,0 +1,31 @@
+{
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Software Engineer",
+        "company": "ABC Company",
+        "location": "City A",
+        "salary": "$100,000",
+        "description": "Conducting code reviews and ensuring adherence to coding standards and best practices.Troubleshooting and debugging issues to optimize application performance.",
+        "requirements": ["Bachelor's degree in Computer Science", "3+ years of experience in software development"]
+      },
+      {
+        "id": 2,
+        "title": "Web Developer",
+        "company": "XYZ Inc.",
+        "location": "City B",
+        "salary": "$80,000",
+        "description": "Developing and maintaining both the front-end and back-end of web applications.Collaborating with the design and product teams to implement user-friendly interfaces.",
+        "requirements": ["Proficiency in HTML, CSS, and JavaScript", "Experience with frontend frameworks"]
+      },
+      {
+        "id": 3,
+        "title": "Data Analyst",
+        "company": "123 Corporation",
+        "location": "City C",
+        "salary": "$70,000",
+        "description": "Designing and developing scalable and high-performance web applications. Collaborating with cross-functional teams to define and implement features.",
+        "requirements": ["Strong analytical and problem-solving skills", "Experience with data visualization tools"]
+      }
+    ]
+  }

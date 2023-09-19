@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+        {% load static %}
+
+        <!-- Rest of your HTML code -->
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/index.css' %}">
+        <!--font-->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap"
+          rel="stylesheet"/>
+        <title>
+          CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY STUDENT PLACEMENT POTRAL STATS
+        </title>
+    </head>
+    <body class="sbody" style="background-image: url('{% static "photos/stats.jpg" %}');">
+        <table>
+            <p class="placement"><b> Placement Statistics</b></p>
+            <p class="placement-a"><b>(previous year statistics)</b></p>
+            <tr>
+                <th>Department</th>
+                <th>Number of Placements</th>
+                <th>Percentage of Total</th>
+            </tr>
+            <tr>
+                <td>Engineering</td>
+                <td>250</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Marketing</td>
+                <td>125</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Sales</td>
+                <td>75</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>50</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>500</td>
+                <td>100%</td>
+            </tr>
+        </table>
+        <br>
+        <div class="content-box">
+            <p class="boxp">Previous Years Placement Percentage</p>
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full">
+                        <div class="fill"></div>
+                        </div>
+                        <div class="mask half">
+                        <div class="fill"></div>
+                        </div>
+                    <div class="inside-circle">82%</div>
+            </div>
+        </div>   
+        </div>
+    </body>
+</html>
